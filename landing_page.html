@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+<style>
+.row1{
+            float: left;
+            margin-left: 10%;
+            margin-top: 50px
+        }
+        .row2{
+            float: left;
+            margin-left: 10%;
+            margin-top: 50px
+        }
+        
+        .p1{
+            width: 200px;
+            height: 250px;
+            float: left;
+            position: relative;
+            border: 5px black solid;
+            margin-left: 50px;
+            margin-top: 50px
+        
+
+        }
+        #pb1{
+            width: 100%;
+            font-size: 20px;
+            background-color: rgba(10, 10, 10, 0.3);
+            color: aliceblue;
+            font-family: bold;
+            position: absolute;
+            left: 0px;
+            bottom: -30px;
+            opacity: 0;
+            transition: 0.5s;
+
+
+
+        }
+        .p1:hover #pb1{
+            bottom: 0px;
+            opacity: 1;
+
+        }
+
+        .p2{
+            width: 200px;
+            height: 250px;
+            float: left;
+            position: relative;
+            border: 5px black solid;
+            margin-left: 50px;
+            margin-top: 50px;
+
+        }
+        #pb1{
+            width: 100%;
+            font-size: 20px;
+            background-color: rgba(10, 10, 10, 0.3);
+            color: aliceblue;
+            font-family: bold;
+            position: absolute;
+            left: 0px;
+            bottom: -30px;
+            opacity: 0;
+            transition: 0.5s;
+
+
+
+        }
+        .p2:hover #pb1{
+            bottom: 0px;
+            opacity: 1;
+
+        }
+    .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+.content{
+    height: 1550px;
+    width: 100%;
+   
+
+}
+
+
+.logo img {
+  max-width: 35px; /* Adjust the size as needed */
+}
+.logo img:hover {
+            transform: scale(1.1);
+        }
+
+.name h1 {
+  margin:0;
+  font-size: 24px;
+}
+.name h1:hover {
+            transform: scale(1.1);
+        }
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  width: 200px;
+  padding: 5px;
+  border: 5px;
+  border-color: black;
+}
+.content{
+    width: 90%;
+    margin: auto;
+}
+.slidingImage{
+    width: 100%;
+}
+
+
+.search-bar button {
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 10%;
+}
+.search-bar button:hover {
+            transform: scale(1.1);
+            color: #fff;
+            background-color: #650909;
+            border-radius: 10%;
+        }
+
+.footer {
+  background-color: #454343;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #f2f2f2;
+}
+.cimg{
+    width: 100%;
+    height: 250px;
+}
+.footer-column {
+  flex: 1;
+  margin-right: 40px;
+}
+.footer-column h3{
+    text-align: center;
+}
+.footer-column p{
+    text-align: center;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+p {
+  margin: 0;
+}
+li{
+    text-align: center;
+}
+.media{
+    width: 100%;
+    height: 20px;
+    text-align: center;
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 1952px){
+    .content{
+    height: 1550px;
+    width: 100%;
+    
+}
+}
+@media screen and (max-width: 1152px){
+    .content{
+    height: 1950px;
+    width: 100%;
+    
+}
+}
+
+@media screen and (max-width: 768px) {
+  .name h1 {
+    font-size: 20px;
+  }
+
+  .search-bar input[type="text"] {
+    width: 150px;
+  }
+  .footer-column {
+    flex-basis: 50%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .content{
+    height: 1750px;
+    width: 100%;
+   
+
+}
+
+  .row1{
+            float: left;
+            margin-left: 20px;
+            margin-top: 50px
+        }
+        .row2{
+            float: left;
+            margin-left: 20px;
+            margin-top: 50px
+        }
+        
+        .p1{
+            width: 200px;
+            height: 250px;
+            float: left;
+            position: relative;
+            border: 5px black solid;
+            margin-left: 50px;
+            margin-top: 50px
+        
+
+        }
+}
+
+@media screen and (max-width: 570px) {
+  .name h1 {
+    font-size: 16px;
+  }
+
+  .search-bar input[type="text"] {
+    width: 100px;
+  }
+  .footer-column {
+    flex-basis: 100%;
+  }
+  .content{
+    height: 2950px;
+    width: 100%;
+
+}
+  
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+           <a href="#"><img src="img/logop.png" alt="Logo"></a>
+        </div>
+        <div class="name">
+          <a href="#"><h1 style="color: black;">Company Name</h1></a>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search">
+          <button type="submit" class="search">Search</button>
+        </div>
+      </header>
+      <div class="content">,
+        <div  class="image">
+            <div > <img src="img/img1.png" alt="image1" class="slidingImage"> </div>
+            <div > <img src="img/img2.png" alt="image2" class="slidingImage"> </div>
+        </div>
+
+        <div>
+            <div class="row1">
+            <div class="p1"> 
+                <img src="img/cloth4.jpg" class="cimg">
+                <a href=""><button id="pb1"><p><B>ADD to Cart</B></p><p><B>Price : 1150 </B></p></button></a>
+            </div>
+            <div class="p1">
+                 <img src="img/cloth5.jpg" class="cimg">
+                 <a href=""><button id="pb1"><p><B>ADD to Cart</B></p><p><B>Price : 1150 </B></p></button></a>
+        
+            </div>
+            <div class="p1">
+                 <img src="img/cloth3.jpg" class="cimg">
+                 <a href=""><button id="pb1"><p><B>ADD to Cart</B></p><p><B>Price : 1150 </B></p></button></a>
+        
+            </div>
+            <div class="p1">
+                 <img src="img/cloth6.jpg" class="cimg">
+                 <a href=""><button id="pb1"><p><B>ADD to Cart</B></p><p><B>Price : 1150 </B></p></button></a>
+        
+            </div>
+            </div>
+        
+        
+            <div class="row2">
+            <div class="p2">
+                 <img src="img/hmcloth2.jpg" class="cimg">
+                 <a href=""><button id="pb1"><p><B>ADD to Cart</B></p><p><B>Price : 1550 </B></p></button></a>
+        
+            </div>
+            
+            
+           
+            <div class="p2">
+
+                 <img src="img/hmcloth3.jpg" class="cimg">
+                 <a href=""><button id="pb1"><p><B>ADD to Cart</B></p><p><B>Price : 1550 </B></p></button></a>
+        
+            </div>
+            <div class="p2">
+                 <img src="img/hmcloth4.jpg" class="cimg">
+                 <a href=""><button id="pb1"><p><B>ADD to Cart</B></p><p><B>Price : 1550 </B></p></button></a>
+        
+            </div>
+            <div class="p2">
+                 <img src="img/HMcloth5.jpg" class="cimg">
+                 <a href=""><button id="pb1"><p><B>ADD to Cart</B></p><p><B>Price : 1550 </B></p></button></a>
+        
+            </div>
+            </div>
+            </div>
+
+      </div>
+
+
+
+      <footer class="footer">
+        <div class="footer-column">
+          <h3>ONLINE STORE</h3>
+          <ul>
+            <li>MEN CLOTHING</li>
+            <li>WOMEN CLOTHING</li>
+            <li>MEN ACCESSORIES</li>
+            <li>WOMEN ACCESSORIES</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>HELPFUL LINKS</h3>
+          <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+            <li>PARTNERS</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>ADDRESS</h3>
+          <p>BUILDING 101</p>
+          <p>CENTRAL AVENUE</p>
+          <p>LA - 902722</p>
+          <p>UNITED STATES</p>
+        </div>
+        <div class="media"> 
+            <a href="#" style="color: #ffffff;">Support | </a> <a href="#"  style="color: #ffffff;">Contact Us</a>
+            
+
+        </div>
+      </footer>
+      
+      
+</body>
+</html>
